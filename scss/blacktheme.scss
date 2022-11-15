@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.bg {
+  padding: 20px;
+  background: #445561;
+  .change {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    background: rgb(129, 122, 122);
+    color: rgb(79, 73, 73);
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    transition: all 1s;
+    &:hover {
+      color: rgb(236, 223, 223);
+      background: rgb(91, 90, 90);
+    }
+  }
+}
+
+.calc {
+  margin: 0px auto;
+  padding: 118px 33px 40px 33px;
+  width: 375px;
+  height: 812px;
+  border-radius: 39px;
+  background: linear-gradient(191.34deg, #17181A -4.95%, #17181A 103.74%);  
+  backdrop-filter: blur(51px);
+  &__screen {
+    height: 192px;
+    &-one {
+      height: 36px;
+      max-width: 310px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: right;
+      color: #818181;
+      span {
+        color: #109DFF;
+      }
+    }
+    &-two {
+      margin-top: 6px;
+      height: 72px;
+      max-width: 310px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 72px;
+      color: #fff;
+      text-align: right;
+    }
+  }
+  
+  &__buttons {
+    display: grid;
+    grid-template-areas: 
+    "e u sin deg"
+    "ac vector division mult"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three plus"
+    "zero zero dot equal";
+    gap: 20px;
+    justify-items: center;
+    .btn {
+      width: 62px;
+      height: 62px;
+      background: #303136;
+      border-radius:  12px;
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 62px;
+      color:#19ACFF;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+      &:hover {
+        filter: brightness(90%);
+      }
+      &:active {
+        filter: brightness(70%);
+      } 
+    } 
+  }
+  .little {
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    top: 4px;
+    font-size: 18px;
+    
+  }
+  .light {
+    background: #005DB2;
+    color: #63abe8;
+  }
+  .mult {
+    line-height: 55px;
+  }
+
+  .ac {
+    font-weight: 400;
+          font-size: 24px;
+          color: #A5A5A5;
+          background: #616161;
+  }
+  
+  .division {
+  color: #63abe8;
+  }
+  .plus {
+    grid-area: plus;
+    height: 96px;
+    line-height: 96px;
+    margin-top: 10px;
+  }
+  .zero {
+    grid-area: zero;
+    width: 144px;
+  }
+  .equal {
+    position: absolute;
+    bottom: 40px;
+    right: 33px;
+    height: 96px;
+    line-height: 96px;
+  }
+  .blue {
+    background: #1991FF;
+    color: #B2DAFF;
+  }
+
+  .down {
+    margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+

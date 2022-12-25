@@ -13,37 +13,39 @@
 <body>
     <section class="bg">
         <button class="change" id="switchMode">Change theme</button>
-    <div class="calc">
-        <div class="calc__screen">
-         <div class="calc__screen-one">6000<span>/</span>2<span>+</span>3227<span>*</span>2</div>
-         <div class="calc__screen-two black">=12,454</div>
+    <div class="calculator">
+        <div class="calculator__screen">
+         <div class="calculator__screen-one "></div>
+         <div class="calculator__screen-two" id="result"></div>
         </div>
-        <div class="calc__buttons">
-            <div class="btn e little">e</div>
-            <div class="btn u little">µ</div>
-            <div class="btn sin little">sin</div>
-            <div class="btn deg little">deg</div>
-            <div class="btn ac">Ac</div>
-            <div class="btn vector ac"><img src="icons/vec.png" alt=""></div>
-            <div class="btn division light">/</div>
-            <div class="btn mult light"><img  src="icons/mult.png" alt=""></div>
-            <div class="btn seven">7</div>
-            <div class="btn eight">8</div>
-            <div class="btn nine">9</div>
-            <div class="btn minus light">-</div>
-            <div class="btn four">4</div>
-            <div class="btn five">5</div>
-            <div class="btn six">6</div>
-            <div class="btn plus light">+</div>
-            <div class="btn one down">1</div>
-            <div class="btn two down">2</div>
-            <div class="btn three down">3</div>
-            <div class="btn zero">0</div>
-            <div class="btn dot">.</div>
-            <div class="btn equal blue">=</div>
+        <div class="calculator__buttons">
+            <div class="btn symbol little " id ="exponent">e</div>
+            <div class="btn symbol  little " id="no-name">µ</div>
+            <div class="btn symbol  little " id="sinus">sin</div>
+            <div class="btn symbol little " id="degree">deg</div>
+            <div class="btn num" id="all-clear">Ac</div>
+            <div class="btn symbol all-clear num" id="del"><img src="icons/vec.png" alt=""></div>
+            <div class="btn symbol light " id="divide">/</div>
+            <div class="btn symbol light mult " id="mult">*</div>
+            <div class="btn symbol seven num">7</div>
+            <div class="btn symbol eight num">8</div>
+            <div class="btn symbol nine num">9</div>
+            <div class="btn symbol light" id="minus">-</div>
+            <div class="btn symbol four num">4</div>
+            <div class="btn symbol five num">5</div>
+            <div class="btn symbol six num">6</div>
+            <div class="btn symbol plus light " id="plus">+</div>
+            <div class="btn symbol one down num">1</div>
+            <div class="btn symbol two down num">2</div>
+            <div class="btn symbol three down num">3</div>
+            <div class="btn symbol zero num">0</div>
+            <div class="btn symbol dot num">.</div>
+            <div class="btn symbol equal blue num" id="equal">=</div>
         </div>
      </div>
     </section>
     <script src="js/changetheme.js"></script>
+    <!-- <script src="js/anotherCalc.js"></script> -->
+    <script src="js/calculator.js"></script>
 </body>
 </html>

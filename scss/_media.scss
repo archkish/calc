@@ -1,0 +1,135 @@
+
+
+@media(max-height: 719px) {
+    .bg {
+        height: 100vh;
+    }
+    .calculator {
+        padding: 80px 18px 10px 18px;
+        border-radius: 27px;
+        width: 265px;
+        height: 500px;
+        &__screen {
+            height: 162px;
+        }
+        &__buttons{
+        
+            gap: 10px;
+            justify-content: space-between;
+            .btn {
+                border-radius: 8px;
+                width: 47px;
+                height: 33px;
+                font-size: 18px;
+                line-height: 18px;
+        
+    
+            }
+            
+            .clear {
+                line-height: 7px;
+            }
+            .little {
+                margin-bottom: 3px;
+                height: 25px;
+                line-height: 25px;
+                font-size: 14px;
+              }
+
+            .plus {
+                height: 57px;
+                line-height: 57px;
+                margin-top: 0px;
+            }
+
+            .zero {
+                width: 112px;
+                
+            }
+
+            .equal {
+                bottom: 14px;
+                right: 17px;
+                height: 57px;
+                line-height: 57px;
+            }
+
+            .down {
+                margin-bottom: 5px;
+            }
+        }
+    }
+       
+}
+
+
+@media (max-height: 574px) {
+    .bg {
+        height: 100vh;
+    }
+    .calculator {
+        padding: 40px 12px 70px 12px;
+        border-radius: 25px;
+        width: 220px;
+        height: 400px;
+        &__screen {
+            height: 117px;
+            &-one {
+                font-size: 20px;
+                height: 25px;
+            }
+            &-two {
+                font-size: 44px;
+                height: 45px;
+            }
+        }
+        &__buttons{
+            justify-content: space-between;
+            gap: 5px;
+    
+            .btn {
+                border-radius: 8px;
+                width: 40px;
+                height: 35px;
+                font-size: 18px;
+                line-height: 18px;
+        
+    
+            }
+
+            .clear {
+                line-height: 7px;
+            }
+
+            .little {
+                height: 22px;
+                line-height: 22px;
+                font-size: 14px;
+                top: 2px;
+              }
+
+            .plus {
+                height: 58px;
+                line-height: 58px;
+                margin-top: 0px;
+            }
+
+            .zero {
+                width: 92px;
+                
+            }
+
+            .equal {
+                bottom: 15px;
+                right: 12px;
+                height: 58px;
+                line-height: 58px;
+            }
+
+            .down {
+                margin-bottom: 3px;
+            }
+        }
+    }
+}
+

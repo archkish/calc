@@ -7,45 +7,46 @@
     <title>calculator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/lighttheme.min.css" id="theme">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@300;400;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="bg">
-        <button class="change" id="switchMode">Change theme</button>
+<section class="bg">
+    <button class="change" id="switchMode">Change theme</button>
     <div class="calculator">
         <div class="calculator__screen">
-         <div class="calculator__screen-one "></div>
-         <div class="calculator__screen-two" id="result"></div>
+            <div class="calculator__screen-one"></div>
+            <div class="calculator__screen-two" id="result"></div>
         </div>
         <div class="calculator__buttons">
-            <div class="btn symbol little " id ="exponent">e</div>
-            <div class="btn symbol  little " id="no-name">µ</div>
-            <div class="btn symbol  little " id="sinus">sin</div>
-            <div class="btn symbol little " id="degree">deg</div>
-            <div class="btn num" id="all-clear">Ac</div>
-            <div class="btn symbol all-clear num" id="del"><img src="icons/vec.png" alt=""></div>
-            <div class="btn symbol light " id="divide">/</div>
-            <div class="btn symbol light mult " id="mult">*</div>
-            <div class="btn symbol seven num">7</div>
-            <div class="btn symbol eight num">8</div>
-            <div class="btn symbol nine num">9</div>
-            <div class="btn symbol light" id="minus">-</div>
-            <div class="btn symbol four num">4</div>
-            <div class="btn symbol five num">5</div>
-            <div class="btn symbol six num">6</div>
-            <div class="btn symbol plus light " id="plus">+</div>
-            <div class="btn symbol one down num">1</div>
-            <div class="btn symbol two down num">2</div>
-            <div class="btn symbol three down num">3</div>
-            <div class="btn symbol zero num">0</div>
-            <div class="btn symbol dot num">.</div>
-            <div class="btn symbol equal blue num" id="equal">=</div>
+            <button class="btn little" data-operation="e">e</button>
+            <button class="btn little" data-operation="cos">cos</button>
+            <button class="btn little" data-operation="sin">sin</button>
+            <button class="btn little" data-operation="deg">deg</button>
+            <button class="btn" id="clear">Ac</button>
+            <button class="btn clear" id="remove"><span></span></button>
+            <button class="btn light" data-operation="/" id="divide">/</button>
+            <button class="btn light multiple" data-operation="*" id="multiple">*</button>
+            <button class="btn seven" data-num="7">7</button>
+            <button class="btn eight" data-num="8">8</button>
+            <button class="btn nine" data-num="9">9</button>
+            <button class="btn light" id="minus" data-operation="-">-</button>
+            <button class="btn four" data-num="4">4</button>
+            <button class="btn five" data-num="5">5</button>
+            <button class="btn six" data-num="6">6</button>
+            <button class="btn plus light" id="plus" data-operation="+">+</button>
+            <button class="btn one down" data-num="1">1</button>
+            <button class="btn two down" data-num="2">2</button>
+            <button class="btn three down" data-num="3">3</button>
+            <button class="btn zero" data-num="0">0</button>
+            <button class="btn" data-num=".">.</button>
+            <button class="btn equal blue" id="equal">=</button>
         </div>
-     </div>
-    </section>
-    <script src="js/changetheme.js"></script>
-    <!-- <script src="js/anotherCalc.js"></script> -->
-    <script src="js/calculator.js"></script>
+    </div>
+</section>
+<script src="js/changeTheme.js"></script>
+<script src="js/calculator.js"></script>
 </body>
 </html>
